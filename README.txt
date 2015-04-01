@@ -14,7 +14,6 @@ How to run the program:
 3. Launch the Vagrant VM
 4. Change current directory to ".../vagrant/tournament"
 5. Run PostgreSQL from command line terminal (> psql)
-6. Create database "tournament" (>create database tournament)
-7. Create all required tables from "tournament.sql" file (> \i tournament.sql)
-8. Change current directory to ".../vagrant/tournament"
-9. Run "tournament_test.py" file (> python tournament_test.py)
+6. Create database  "tournament"  abd all required tables from "tournament.sql" file (> \i tournament.sql)
+7. Change current directory to ".../vagrant/tournament"
+8. Run "tournament_test.py" file (> python tournament_test.py)

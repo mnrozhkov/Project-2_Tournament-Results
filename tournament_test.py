@@ -71,7 +71,7 @@ def testStandingsBeforeMatches():
         raise ValueError("Each playerStandings row should have four columns.")
     [(id1, name1, wins1, matches1), (id2, name2, wins2, matches2)] = standings
     if matches1 != 0 or matches2 != 0 or wins1 != 0 or wins2 != 0:
-        print(id1, name1, wins1, matches1, id2, name2, wins2, matches2)
+        #print(id1, name1, wins1, matches1, id2, name2, wins2, matches2)
         raise ValueError(
             "Newly registered players should have no matches or wins.")
     if set([name1, name2]) != set(["Melpomene Murray", "Randy Schwartz"]):
@@ -111,11 +111,11 @@ def testPairings():
     registerPlayer("Pinkie Pie")
     standings = playerStandings()
 
-    print(standings)
+    #print(standings)
 
     [id1, id2, id3, id4] = [row[0] for row in standings]
 
-    print(id1, id2, id3, id4)
+    #print(id1, id2, id3, id4)
 
     reportMatch(id1, id2)
     reportMatch(id3, id4)
