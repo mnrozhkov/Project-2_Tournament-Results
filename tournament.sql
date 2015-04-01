@@ -1,20 +1,12 @@
 -- Table definitions for the tournament project.
---
--- Put your SQL 'create table' statements in this file; also 'create view'
--- statements if you choose to use it.
---
--- You can write comments in this file by starting them with two dashes, like
--- these lines here.
-
 --to execute this file use command: \i tournament.sql
 --run this command after connection to tournament database is enabled
 
 
---drop all old tables
-DROP TABLE pairings;
-DROP TABLE matches;
-DROP TABLE standings;
-DROP TABLE players;
+--drop database tournament if exists
+DROP DATABASE IF EXISTS tournament;
+CREATE DATABASE tournament;
+\c tournament
 
 
 -- Create table players
@@ -58,4 +50,3 @@ CREATE TABLE pairings ( --as a VIEW ?
   name_player1 TEXT,
   player2 INTEGER,
   name_player2 TEXT);
-o
